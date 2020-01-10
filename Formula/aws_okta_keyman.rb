@@ -9,8 +9,8 @@ class AwsOktaKeyman < Formula
 
   desc "AWS Okta Keyman: An AWS/Okta connector that pulls AWS API keys using an Okta SAML assertion."
   homepage "https://github.com/nathan-v/aws_okta_keyman"
-  url "https://files.pythonhosted.org/packages/75/0e/2534605569123a948e99ece991c82a4f2d0a1f0c19e27a1bca45fc8842b6/aws_okta_keyman-0.7.4.tar.gz"
-  sha256 "62d537f7cff61c3cae940f2af06b0583c127b0b0d2fbc34e6cae09f5069da5c0"
+  url "https://files.pythonhosted.org/packages/c1/59/5dc855887cb7de6754f1206a391614547d1b1c9a9f0a62f634505e1d5e0e/aws_okta_keyman-0.7.5.tar.gz"
+  sha256 "b0afecec3fa083267013b01ebec38cabcb7bf372e52f0b3aea45fbb069d6939f"
 
   resource "beautifulsoup4" do
     url "https://files.pythonhosted.org/packages/86/cd/495c68f0536dcd25f016e006731ba7be72e072280305ec52590012c1e6f2/beautifulsoup4-4.8.1.tar.gz"
