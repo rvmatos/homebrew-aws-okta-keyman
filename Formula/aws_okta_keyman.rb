@@ -1,16 +1,12 @@
 class AwsOktaKeyman < Formula
   include Language::Python::Virtualenv
 
-  depends_on "python"
-
-  def install
-    virtualenv_install_with_resources
-  end
-
-  desc "AWS Okta Keyman: An AWS/Okta connector that pulls AWS API keys using an Okta SAML assertion."
+  desc "Pulls AWS API keys using an Okta SAML assertion"
   homepage "https://github.com/nathan-v/aws_okta_keyman"
-  url "https://files.pythonhosted.org/packages/aa/11/3cfe109ce1eb1763c5d70f5aa87bf9c8c969c5fef8e311a70fc2b2005bb8/aws_okta_keyman-0.8.1.tar.gz"
-  sha256 "00f2ff2776799388a2a4fb37910664eb2101ecb8b334d599da735a77726af112"
+  url "https://files.pythonhosted.org/packages/1a/ba/7cc42ef5cdb013fbafcaa58a5bef14b3cebde0d04540ee4cb29c3a63a3cd/aws_okta_keyman-0.8.4.tar.gz"
+  sha256 "194b120394a354879168db7c5c780bdc4d169653a028b169ca6c004f13a0e1dc"
+
+  depends_on "python@3.8"
 
   resource "beautifulsoup4" do
     url "https://files.pythonhosted.org/packages/86/cd/495c68f0536dcd25f016e006731ba7be72e072280305ec52590012c1e6f2/beautifulsoup4-4.8.1.tar.gz"
@@ -127,4 +123,13 @@ class AwsOktaKeyman < Formula
     sha256 "3718b1cbcd963c7d4c5511a8240812904164b7f381b647143a89d3b98f9bcd8e"
   end
 
+  def install
+    virtualenv_install_with_resources
+  end
+
+  test do
+    ENV["HOME"] = testpath
+    assert_match "error: the following arguments are required: -o/--org",
+                 shell_output("#{bin}/aws_okta_keyman 2>&1", 2)
+  end
 end
