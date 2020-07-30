@@ -4,7 +4,7 @@
 See [nathan-v/aws\_okta\_keyman](https://github.com/nathan-v/aws_okta_keyman) for more information.
 
 ### Formula Version 
-Formula installs AWS Okta Keyman v0.7.0
+Formula installs AWS Okta Keyman v0.8.4
 
 ## How do I install this formula?
 
