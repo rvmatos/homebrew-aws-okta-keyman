@@ -3,8 +3,8 @@ class AwsOktaKeyman < Formula
 
   desc "Pulls AWS API keys using an Okta SAML assertion"
   homepage "https://github.com/nathan-v/aws_okta_keyman"
-  url "https://files.pythonhosted.org/packages/1a/ba/7cc42ef5cdb013fbafcaa58a5bef14b3cebde0d04540ee4cb29c3a63a3cd/aws_okta_keyman-0.8.4.tar.gz"
-  sha256 "194b120394a354879168db7c5c780bdc4d169653a028b169ca6c004f13a0e1dc"
+  url "https://files.pythonhosted.org/packages/e8/29/3511980da5f7d2ca16a99f98793f5486be16376da044ab80dd4e93b6add1/aws_okta_keyman-0.8.5.tar.gz"
+  sha256 "7dc9457011242b1d47af066d3b6acc1553ca655d9147f9b0c1212ceff97b2acc"
 
   depends_on "python@3.8"
 
