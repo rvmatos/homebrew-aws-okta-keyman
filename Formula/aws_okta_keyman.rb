@@ -3,14 +3,14 @@ class AwsOktaKeyman < Formula
 
   desc "Pulls AWS API keys using an Okta SAML assertion"
   homepage "https://github.com/nathan-v/aws_okta_keyman"
-  url "https://files.pythonhosted.org/packages/8a/38/b4db67f713f8ab103bfc63269cef41ef3e5023ee715cf292275f71a5bc3c/aws_okta_keyman-0.8.6.tar.gz"
-  sha256 "185860cf6043c060a251d3f0abbafe5b66dd1de99e4f866496e4da04b8a49f54"
+  url "https://files.pythonhosted.org/packages/f1/f2/84ad9c65c163715265266424ca3c2134629d64f6800f2eb24e78f3a9f296/aws_okta_keyman-0.9.0.tar.gz"
+  sha256 "58ba9cb40402ab8bcae2fd8bbcf9966cf9416436cfc84636cadca0e27d5f90a1"
 
   depends_on "python@3.8"
 
   resource "beautifulsoup4" do
-    url "https://files.pythonhosted.org/packages/6b/c3/d31704ae558dcca862e4ee8e8388f357af6c9d9acb0cad4ba0fbbd350d9a/beautifulsoup4-4.9.3.tar.gz"
-    sha256 "84729e322ad1d5b4d25f805bfa05b902dd96450f43842c4e99067d5e1369eb25"
+    url "https://files.pythonhosted.org/packages/a1/69/daeee6d8f22c997e522cdbeb59641c4d31ab120aba0f2c799500f7456b7e/beautifulsoup4-4.10.0.tar.gz"
+    sha256 "c23ad23c521d818955a4151a67d81580319d4bf548d3d49f4223ae041ff98891"
   end
 
   resource "boto3" do
@@ -43,11 +43,6 @@ class AwsOktaKeyman < Formula
     sha256 "005c3b102c96f4be9b8f40dafbd4997db003d07d1caa19f37808be8031475f2a"
   end
 
-  resource "future" do
-    url "https://files.pythonhosted.org/packages/45/0b/38b06fd9b92dc2b68d58b75f900e97884c45bedd2ff83203d933cf5851c9/future-0.18.2.tar.gz"
-    sha256 "b1bead90b70cf6ec3f0710ae53a525360fa360d306a86583adc6bf83a4db537d"
-  end
-
   resource "idna" do
     url "https://files.pythonhosted.org/packages/ea/b7/e0e3c1c467636186c39925827be42f16fee389dc404ac29e930e9136be70/idna-2.10.tar.gz"
     sha256 "b307872f855b18632ce0c21c5e45be78c0ea7ae4c15c828c20788b26921eb3f6"
@@ -74,8 +69,8 @@ class AwsOktaKeyman < Formula
   end
 
   resource "PyYAML" do
-    url "https://files.pythonhosted.org/packages/64/c2/b80047c7ac2478f9501676c988a5411ed5572f35d1beff9cae07d321512c/PyYAML-5.3.1.tar.gz"
-    sha256 "b8eac752c5e14d3eca0e6dd9199cd627518cb5ec06add0de9d32baeee6fe645d"
+    url "https://files.pythonhosted.org/packages/36/2b/61d51a2c4f25ef062ae3f74576b01638bebad5e045f747ff12643df63844/PyYAML-6.0.tar.gz"
+    sha256 "68fb519c14306fec9720a2a5b45bc9f0c8d1b9c72adf45c37baedfcd949c35a2"
   end
 
   resource "requests" do
