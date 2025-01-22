@@ -6,7 +6,7 @@ class AwsOktaKeyman < Formula
   url "https://files.pythonhosted.org/packages/f1/f2/84ad9c65c163715265266424ca3c2134629d64f6800f2eb24e78f3a9f296/aws_okta_keyman-0.9.0.tar.gz"
   sha256 "58ba9cb40402ab8bcae2fd8bbcf9966cf9416436cfc84636cadca0e27d5f90a1"
 
-  depends_on "python@3.8"
+  depends_on "python@3.9"
 
   resource "beautifulsoup4" do
     url "https://files.pythonhosted.org/packages/a1/69/daeee6d8f22c997e522cdbeb59641c4d31ab120aba0f2c799500f7456b7e/beautifulsoup4-4.10.0.tar.gz"
